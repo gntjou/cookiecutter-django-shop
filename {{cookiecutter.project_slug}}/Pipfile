@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "<3"
+django = "<2.1"
 djangocms-cascade = "*"
 {% if cookiecutter.use_compressor == 'y' -%}
 django-compressor = "*"
@@ -53,6 +53,7 @@ paypalrestsdk = "<2"
 {% if cookiecutter.use_sendcloud == 'y' -%}
 djangoshop-sendcloud = "*"  {# "{{ cookiecutter.version }}" #}
 {% endif -%}
+mysqlclient = "*"
 
 [dev-packages]
 tox = "*"
